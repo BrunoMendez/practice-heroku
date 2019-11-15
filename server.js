@@ -2,7 +2,6 @@ let express = require( "express" );
 let morgan = require( "morgan" );
 let mongoose = require( "mongoose" );
 let bodyParser = require( "body-parser" );
-let bcrypt = require('bcryptjs');
 let { StudentList } = require('./model');
 const { DATABASE_URL, PORT } = require( './config' );
 
