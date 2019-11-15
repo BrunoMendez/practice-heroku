@@ -204,7 +204,7 @@ app.post("/register", jsonParser, (req, res, next) =>{
 
 app.post("/login", jsonParser, (req, res, next)=> {
 	let {username, password} = req.body;
-	users.get({username})
+	User.get({username})
 		.then (user => {
 
 		})

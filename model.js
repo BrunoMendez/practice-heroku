@@ -10,12 +10,6 @@ let studentSchema = mongoose.Schema({
 			required : true }
 });
 
-let userSchema = mongoose.Schema({
-	username : {type : String},
-	password : {type : String}
-});
-
-let User = mongoose.model('User', userSchema);
 let Student = mongoose.model( 'Student', studentSchema );
 
 
